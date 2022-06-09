@@ -10,10 +10,9 @@
 - Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
 - Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6)
 
-## Typography
-### Body Copy
-### Font
 
+## Typography
+### Font
 - Family: [Inter](https://fonts.google.com/specimen/Inter)
 - Weights: 400, 700
 
@@ -45,7 +44,8 @@ img {
 
 body {
     background-color: hsl(233, 47%, 7%);
-    display: grid;
+    display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     color: white;
@@ -64,12 +64,32 @@ body {
     min-width: 20em;
     max-width: 20em;
     min-height: 40em;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.main {
-    margin-top: 17.5em;
+.main {    
+    margin-top: 16.5em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.heading {
+    font: 700 1.725rem 'Inter', sans-serif;
+}
+
+h2 {
+    font: 700 1.5rem 'Inter', sans-serif;
 }
 
 .insights {
     color: hsl(277, 64%, 61%);
+}
+
+.content {
+    font: .9375rem/1.8 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
 }
