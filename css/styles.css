@@ -57,22 +57,24 @@ body {
     background-image:
         url('../images/image-header-mobile.jpg'),
         linear-gradient(violet, violet);
-    background-size: 100% 235px, 100% 235px;
+    background-size: 100% auto, 100% 235px;
     background-position: left top;
     background-repeat: no-repeat;
     border-radius: 10px;
     min-width: 20em;
     max-width: 20em;
     min-height: 40em;
+    height: fit-content;
+    overflow: auto;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
 .main {    
-    margin-top: 16.5em;
+    margin-top: 17em;
     margin-left: 1.5em;
     margin-right: 1.5em;
 }
@@ -90,6 +92,28 @@ h2 {
 }
 
 .content {
-    font: .9375rem/1.8 'Lexend Deca', sans-serif;
-    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 1.275em;
+    margin-bottom: 2.75em;
+    font: .9375rem/1.6 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.stats {
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: space-around;
+    row-gap: 1.3em;
+    padding-bottom: 2.5em;
+}
+
+.stats h2 {
+    color: #ffffff;
+    margin-bottom: .2em;
+}
+
+.stats p {
+    font: 400 .8rem 'Lexend Deca', sans-serif ;
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    letter-spacing: .05rem;
 }
