@@ -59,21 +59,19 @@ body {
     background-color: hsl(244, 38%, 16%);
     border-radius: 10px;
     width: 20em;
-    /* min-width: 20em; */
-    /* max-width: 20em; */
-    /* min-height: 40em; */
     overflow: auto;
     text-align: center;
+    box-shadow: 0 1em 2em .5em hsl(245, 50%, 9%);
 }
 
 .image-header {
-    background-color: hsl(277, 74%, 34%);
+    background-color: hsl(278, 100%, 24%);
 }
 
 .header-img {
     width: 100%;
     height: auto;
-    opacity: .475;
+    opacity: .45;
 }
 
 .main {    
@@ -121,21 +119,22 @@ h2 {
     letter-spacing: .05rem;
 }
 
-@media only screen and (min-width: 880px) {
+
+/* Responsive design (check index.html source element and adjust resolution via media attribute as well!) */
+
+@media only screen and (min-width: 1200px) {
     .card {display: flex;
             flex-flow: row-reverse nowrap;
             justify-content: center;
             align-items: center;
-            min-width: 30em;
-            width: 70%;
+            height: 27.75em;
+            width: 69em;
             text-align: left;
             overflow: hidden;
-    }
-    picture {width: 50%; align-self: flex-start; }
-    .header-img img {object-fit: fill;}
-    .main {width: 50%;}
-    .heading {}
-    .content {}
-    .stats {flex-flow: row nowrap; gap: 2em;}
-    .stats p {}
+            margin: 0;
+        }
+    .main {width: 51%; padding-left: 4.4em; padding-right: 7em; padding-top: 3em; margin: 0;}
+    .heading {font-size: 2.25rem; margin-bottom: .75em;}
+    .content {font-size: .9rem; line-height: 1.8; margin-bottom: 5em;}
+    .stats {flex-flow: row nowrap; gap: 3.5em; justify-content: flex-start; align-items: flex-end;}
 }
