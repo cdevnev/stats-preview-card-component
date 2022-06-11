@@ -65,13 +65,15 @@ body {
 }
 
 .image-header {
-    background-color: hsl(278, 100%, 24%);
+    /* background-color: hsl(278, 100%, 24%); */
+    background-color: hsl(277, 64%, 61%);
 }
 
 .header-img {
     width: 100%;
     height: auto;
-    opacity: .45;
+    /* opacity: .45; */
+    mix-blend-mode: multiply;
 }
 
 .main {    
